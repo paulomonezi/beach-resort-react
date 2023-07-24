@@ -15,7 +15,6 @@ function App() {
         <Route exact path="/" Component={Home} />
         <Route exact path="/rooms" Component={Rooms} />
         <Route exact path="/rooms/:slug" Component={SingleRoom} />
-
         <Route path="*" Component={Error} />
       </Routes>
     </>
