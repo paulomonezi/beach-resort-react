@@ -5,6 +5,7 @@ import Banner from "../components/Banner"
 import { Link, useParams } from "react-router-dom"
 import { RoomContext } from "../context"
 import StyledHero from "../components/StyledHero"
+import { Footer } from "../components/Footer"
 
 export default function SingleRoom() {
   const { slug } = useParams()
@@ -13,12 +14,15 @@ export default function SingleRoom() {
 
   if (!room) {
     return (
-      <div className="error">
-        <h3>no such room could be found</h3>
-        <Link to="/rooms" className="btn-primary">
-          back to rooms
-        </Link>
-      </div>
+      <>
+        {window.scrollTo(0, 0)}
+        <div className="error">
+          <h3>no such room could be found</h3>
+          <Link to="/rooms" className="btn-primary">
+            back to rooms
+          </Link>
+        </div>
+      </>
     )
   }
 
@@ -38,6 +42,7 @@ export default function SingleRoom() {
   const [mainImg, ...defaultImg] = images
   return (
     <>
+      {window.scrollTo(0, 0)}
       <StyledHero img={mainImg}>
         {/* <Hero hero="roomsHero"> */}
         <Banner title={`${name} room`}>
@@ -60,8 +65,8 @@ export default function SingleRoom() {
           </article>
           <article className="info">
             <h3>info</h3>
-            <h6>price: ${price}</h6>
-            <h6>size: {size} sqft</h6>
+            <h6>price: R${price}</h6>
+            <h6>size: {size} m²</h6>
             <h6>
               max capacity :{" "}
               {capacity > 1 ? `${capacity} people` : `${capacity} person`}
@@ -79,6 +84,7 @@ export default function SingleRoom() {
           })}
         </ul>
       </section>
+      <Footer />
     </>
   )
 }

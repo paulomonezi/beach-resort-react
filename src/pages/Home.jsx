@@ -5,14 +5,16 @@ import { Link } from "react-router-dom"
 import Services from "../components/Services"
 import FeaturedRooms from "../components/FeaturedRooms"
 import RoomContainer from "../components/RoomContainer"
+import { Footer } from "../components/Footer"
 
 export default function Home() {
   return (
     <>
+    {window.scrollTo(0, 0)}
       <Hero>
         <Banner
           title="luxurious rooms"
-          subtitle="deluxe rooms starting at $299"
+          subtitle="deluxe rooms starting at R$299"
         >
           <Link to="/rooms" className="btn-primary">
             our rooms
@@ -22,6 +24,7 @@ export default function Home() {
       <Services />
       <FeaturedRooms />
       <RoomContainer/>
+      <Footer/>
     </>
   )
 }
