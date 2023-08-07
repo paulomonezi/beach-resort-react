@@ -5,6 +5,9 @@ _Languages:_
 
 - 🌎 Also avaliable in english 👉 [Here](https://github.com/paulomonezi/beach-resort-react/blob/main/README.md)
 
+## 🔗 Link
+https://beach-resort-react-lilac.vercel.app/
+
 ## 💻 Sobre o projeto
 
 O projeto se trata de um app para alugueis de quartos em um resort de luxo, o usuário pode navegar pela página e filtrar os quartos de acordo com suas preferências, como por exemplo:
