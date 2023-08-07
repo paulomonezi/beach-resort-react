@@ -87,3 +87,6 @@ Contentful Docs https://www.contentful.com/help/contentful-overview/
 <br>
 Content Model https://www.contentful.com/help/content-modelling-basics/
 <br>
+
+### Special thanks<br>
+John Smilga, from [Codding Addict](https://www.youtube.com/c/CodingAddict)
